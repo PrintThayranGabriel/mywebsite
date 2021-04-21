@@ -92,6 +92,7 @@ header img{
 
 button a{
     color: #FFF;
+    font-size: 15px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
 }
