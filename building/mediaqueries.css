@@ -1,0 +1,33 @@
+@media (max-width: 910px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    header .links-nav{
+        margin-top: 20px;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        margin-top: -100px;
+    }
+
+    .banner .image img{
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    
+}

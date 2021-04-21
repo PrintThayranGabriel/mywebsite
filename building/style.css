@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background: #090e16;
+    --color1: #c83267;
+    --fonte1: 'Raleway', sans-serif;
+
+}
+
+body{
+    font-family: var(--fonte1);
+}
+
+/*  HEADER  */
+
+header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #FFF;
+    margin: 0px 20px;
+}
+
+header img{
+    width: 35%;
+}
+
+.links-nav{
+    text-align: center;
+}
+
+.links-nav a{
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.links-nav a img{
+    width: 10%;
+}
+
+/* END HEADER  */
+
+.banner{
+    background-color: var(--background);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.banner .image img{
+    width: 400px;
+}
+
+.banner .text h1{
+    color: #FFF;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.banner .text p{
+    color: #FFF;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.banner .text strong{
+    color: var(--color1);
+}
+
+.banner .text button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--color1);
+    border: none;
+    border-radius: 100px;
+    
+}
+
+button a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+}
