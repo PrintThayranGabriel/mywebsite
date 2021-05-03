@@ -96,3 +96,34 @@ button a{
     text-decoration: none;
     font-weight: bold;
 }
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: var(--background);
+}
+
+.about .image img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.about .text{
+    width: 50%;
+    padding: 0px 25px;
+}
+
+.about .text h1{
+    color: var(--color1);
+    font-size: 2.5em;
+}
+
+.about .text p{
+    text-align: justify;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 1.3em;
+}

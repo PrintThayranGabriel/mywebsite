@@ -25,6 +25,17 @@
         width: 250px;
     }
 
+    .about{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .about .text h1{
+        text-align: center;
+        font-size: 2em;
+    }
+
 }
 
 @media (max-width: 600px) {
