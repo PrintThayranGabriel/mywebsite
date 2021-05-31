@@ -20,7 +20,7 @@
     .banner{
         display: flex;
         flex-direction: column-reverse;
-        height: 100vh;
+        height: 80vh;
         text-align: center;
         justify-content: center;
     }
@@ -32,7 +32,7 @@
     .about{
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 130vh;
     }
 
     .about .text h1{
