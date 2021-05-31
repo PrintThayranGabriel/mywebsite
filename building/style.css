@@ -7,7 +7,7 @@
 
 :root{
     --background: #090e16;
-    --color1: #c83267;
+    --color1: #ee0823;
     --fonte1: 'Raleway', sans-serif;
 
 }
@@ -33,8 +33,9 @@ header nav a{
     margin: 0px 20px;
 }
 
-header img{
-    width: 35%;
+header video{
+    width: 150px;
+    margin-left: 130px;
 }
 
 .links-nav{
@@ -127,3 +128,5 @@ button a{
     font-weight: 300;
     font-size: 1.3em;
 }
+
+

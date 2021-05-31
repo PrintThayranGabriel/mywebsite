@@ -13,6 +13,10 @@
         margin-top: 20px;
     }
 
+    header video{
+        margin: 0;
+    }
+
     .banner{
         display: flex;
         flex-direction: column-reverse;
@@ -39,7 +43,5 @@
 }
 
 @media (max-width: 600px) {
-    .banner{
-        padding-top: 25px;
-    }
+    
 }
