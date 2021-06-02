@@ -25,12 +25,3 @@ a{
     border-radius: 10%;
    
 }
-
-#whatsapp{
-    background: linear-gradient(90deg, rgba(14,255,0,1) 0%, rgba(47,181,19,1) 45%, rgba(123,214,117,1) 100%);
-}
-
-
-#instagram{
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-}
