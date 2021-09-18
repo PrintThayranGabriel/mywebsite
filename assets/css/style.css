@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -16,9 +17,69 @@
 }
 
 body{
+    position: relative;
     font-family: 'DM Sans', sans-serif;
     background: var(--color_black);
 }
+
+/* MENU */
+
+.menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 11px;
+}
+
+.menu_hamburguer{
+    display: none;
+    background: rgba(0, 0, 0, 0.905);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    animation: menu 1s;
+}
+
+.menu_hamburguer .links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_hamburguer .links a{
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color_white);
+    padding: 5px 20px;
+    margin: 10px 0px;
+    border: 1px solid var(--color_gray);
+}
+
+.menu_hamburguer img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+@keyframes menu {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+
+/* END MENU */
 
 header{
     display: flex;
@@ -43,11 +104,17 @@ header .links a{
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
+    transition: .5s;
+}
+
+header .links a:hover{
+    color: var(--color_green);
 }
 
 /* CONTAINER BANNER*/
 
 .container{
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,24 +166,14 @@ header .links a{
     width: 300px;
 }
 
+
 /* CONTAINER ABOUT ME*/
 
 .container .about_me{
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-    text-align: start;
+    text-align: center;
     width: 800px;
     margin-bottom: 70px;
 }
-
-.container .about_me .image{
-    width: 120%;
-    height: 230px;
-    background: var(--color_dark_gray);
-}
-
-.container .about_me .image img{}
 
 .container .about_me .text h1{
     color: var(--color_white);
@@ -143,6 +200,10 @@ header .links a{
 
 .container .portfolio .row{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   max-width: 1300px;
 }
 
 .container .portfolio .cards .card{
@@ -150,6 +211,7 @@ header .links a{
     padding: 15px;
     border: 1px solid var(--color_gray);
     margin: 10px;
+    transition: .5s;
 }
 
 .container .portfolio .cards .card img{
@@ -172,6 +234,10 @@ header .links a{
     border: 1px solid var(--color_gray);
 }
 
+.container .portfolio .cards .card:hover{
+    box-shadow: 7px 8px 6px -6px var(--color_green);
+}
+
 /* CONTAINER SERVICES*/
 
 .container .services{
@@ -185,6 +251,8 @@ header .links a{
 
 .container .services .cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -200,7 +268,7 @@ header .links a{
 .container .services .cards .card h1{
     margin-top: 5px;
     line-height: 35px;
-    color: var(--color_light_gray);
+    color: var(--color_white);
     font-weight: 500;
     font-size: 25px;
 }
@@ -216,11 +284,13 @@ header .links a{
 .container .skills .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 30px;
 }
 
 .container .skills .card{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 150px;
@@ -229,6 +299,81 @@ header .links a{
     border: 1px solid var(--color_gray);
     padding: 25px;
     margin: 10px 15px;
+}
+
+.container .skills .card h2{
+    line-height: 35px;   
+    color: var(--color_white);
+    font-weight: 500;
+    font-size: calc(10px + .5vw);
+}
+
+/* CONTAINER CERTIFICATIONS */
+
+.container .certifications h1{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: var(--color_white);
+}
+
+.container .certifications .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .certifications .cards .card{
+    width: 460px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    border: 1px solid var(--color_dark_gray);
+    margin: 10px 30px;
+}
+
+.container .certifications .cards .card .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background: var(--color_dark_gray);
+}
+
+.container .certifications .cards .card1 .image img{
+    width: 120px;
+}
+
+.container .certifications .cards .card2 .image img{
+    width: 100px;
+}
+
+.container .certifications .cards .card .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container .certifications .cards .card .text h2{  
+    color: var(--color_white);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.container .certifications .cards .card .text p{
+    color: var(--color_light_gray);
+}
+.container .certifications .cards .card .text a{
+    background: var(--color_green);
+    text-decoration: none;
+    color: var(--color_black);
+    padding: 10px 20px;
+    margin-top: 10px;
 }
 
 /* CONTAINER CONTACT */
@@ -246,6 +391,8 @@ header .links a{
 
 .container .contact .cards{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .container .contact .cards .card{
@@ -253,6 +400,7 @@ header .links a{
     align-items: center;
     text-align: flex-start;
     margin: 40px 30px;
+    width: 230px;
 }
 
 .container .contact .cards .card .text{
@@ -263,8 +411,8 @@ header .links a{
     color: var(--color_white);
 }
 
-.container .contact .cards .card .text  p{
-    color: var(--color_light_gray);
+.container .contact .cards .card .text  a{
+    color: var(--color_light_gray) !important;
     font-size: 13px;
 }
 

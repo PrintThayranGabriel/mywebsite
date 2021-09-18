@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1200px) {
+    header{
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 0px;
+    }
+
+    .container .banner{
+        width: 100%;
+        column-gap: 100px;
+    }
+}
+
+/* Aqui aparece o menu hamburguer */
+
+@media only screen and (max-width: 950px) {
+    .container .banner{
+        flex-direction: column-reverse;
+    }  
+
+    .about_me{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_me .text p{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_me  .text h1{
+        font-size: calc(20px + .5vw);
+    }
+
+    .about_me .text p{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        font-size: calc(15px + .5vw);
+    }
+
+    .container .certifications .cards{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+}
+
+
+@media only screen and (max-width: 700px) {
+    body{
+        /* background: red; */
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    header{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .container .banner{
+        flex-direction: column-reverse;
+    }
+
+    .container .banner .buttons{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .banner .buttons a{
+        text-align: center;
+        width: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px 0px;
+    }
+
+    .container .banner .banner_text h1{
+        font-size: 20px;
+    }
+
+    .container .banner .banner_text p{
+        font-size: 15px;
+    }
+
+    .container .banner .banner_image img{
+        width: 200px;
+    }
+
+    .portfolio h1{
+        font-size: calc(20px + .5vw);
+    }
+
+    .services h1{
+        font-size: calc(20px + .5vw);
+    }
+
+    .skills h1{
+        font-size: calc(20px + .5vw);
+    }
+
+    .contact h1{
+        font-size: calc(20px + .5vw);
+    }
+
+    .certifications h1{
+        font-size: calc(20px + .5vw);
+    }
+
+    .container .skills .cards .card{
+        width: 100px;
+        height: 100px;
+    }
+
+    .container .services .cards .card{
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        width: 250px;
+    }
+
+    .container .services .cards .card h1{
+        line-height: 25px;
+        font-size: calc(16px + .5vw);
+    }
+
+    .container .services .cards .card img{
+        width: 30px;
+        height: 30px;
+    }
+    
+
+    .container .skills .cards .card img{
+        width: 50px;
+    }
+
+    .container .contact .cards{
+        margin-top: 20px;
+    }
+    
+    .container .contact .cards .card{
+        margin: 10px;
+    }
+
+    .container .certifications .cards .card{
+        width: 280px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .container .certifications .cards .card .image{
+        align-items: center;
+    }
+
+    .container .certifications .cards .card .text{
+        align-items: center;
+        text-align: center;
+    }
+
+}

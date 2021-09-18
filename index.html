@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Thayran Gabriel</title>
 </head>
 <body>
-   
+    
+    <div class="menu">
+        <img id="open_menu" src="assets/images/open_menu.svg" alt="Menu">
+    </div>
+
+    <div id="menu" class="menu_hamburguer">
+        <img id="close_menu" src="assets/images/close_menu.svg" alt="">
+        <div class="links">
+            <a href="#about">Sobre mim</a>
+            <a href="#portfolio">Projetos</a>
+            <a href="#services">Serviços</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contato</a>
+        </div>
+    </div>
 
     <div class="container">
         <header>
@@ -17,11 +34,11 @@
             </div>
     
             <div class="links">
-                <a href="">Sobre mim</a>
-                <a href="">Projetos</a>
-                <a href="">Serviços</a>
-                <a href="">Skills</a>
-                <a href="">Contato</a>
+                <a href="#about">Sobre mim</a>
+                <a href="#portfolio">Projetos</a>
+                <a href="#services">Serviços</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contato</a>
             </div>
         </header>
 
@@ -32,7 +49,7 @@
 
                 <div class="buttons">
                     <a href="">Download CV</a>
-                    <a href="">Entrar em contato</a>
+                    <a href="#contact">Entrar em contato</a>
                 </div>
             </div>
             <div class="banner_image">
@@ -40,18 +57,14 @@
             </div>
         </div>
 
-        <div class="about_me">
-            <div class="image">
-                <img src="" alt="Minha foto">
-            </div>
-
+        <div id="about" class="about_me" data-aos="zoom-in" data-aos-duration="1000">
             <div class="text">
                 <h1>Sobre mim</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                <p>Olá, meu nome é Thayran Gabriel, tenho 17 anos,sou desenvolvedor web e atualmente estou cursando o ensino médio integrado a um curso técnico em desenvolvimento de sistemas web, sempre buscando o máximo de conhecimento possivel para que possa aprimorar meu trabalho. Fiz diversos cursos na área, tenho experiência com projetos freelancers e com empresas de pequeno e médio porte.</p>
             </div>
         </div>
 
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Projetos</h1>
 
             <div class="cards">
@@ -71,11 +84,9 @@
                     <div class="card">
                         <img src="assets/images/site03.png" alt="">
                         <h3>Site comercial - Supravisão</h3>
-                        <p>Tecnologias: Wordpress</p>
+                        <p>Tecnologias: Wordpress & Elementor</p>
                     </div>
-                </div>
-
-                <div class="row">
+            
                     <div class="card">
                         <img src="assets/images/site04.png" alt="">
                         <h3>Meu TCC - Stockdash</h3>
@@ -85,19 +96,19 @@
                     <div class="card">
                         <img src="assets/images/site05.png" alt="">
                         <h3>Site comercial - Cash Hand</h3>
-                        <p>Tecnologias: Wordpress</p>
+                        <p>Tecnologias: Wordpress & WP Bakery</p>
                     </div>
         
                     <div class="card">
-                        <img src="assets/images/project.png" alt="">
-                        <h3>Título do projeto</h3>
-                        <p>Tecnologias: HTML, CSS, e JS</p>
+                        <img src="assets/images/site06.png" alt="">
+                        <h3>Site institucional - Polly academias</h3>
+                        <p>Tecnologias: Wordpress & Elementor</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="services">
+        <div id="services" class="services" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Serviços</h1>
             <div class="cards">
                 <div class="card">
@@ -117,36 +128,78 @@
             </div>
         </div>
 
-        <div class="skills">
+        <div id="skills" class="skills" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Minhas Skills</h1>
             <div class="cards">
                 <div class="card">
                     <img src="assets/images/html.png" alt="html">
+                    <h2>HTML5</h2>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/css.png" alt="css">
+                    <h2>CSS3</h2>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/javascript.png" alt="javascript">
+                    <h2>Javascript</h2>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/php.svg" alt="php">
+                    <h2>PHP</h2>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/sql.svg" alt="sql">
+                    <h2>SQL</h2>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/git.svg" alt="git">
+                    <h2>GIT</h2>
                 </div>
             </div>
         </div>
 
-        <div class="contact">
+        <div id="certifications" class="certifications" data-aos="zoom-in" data-aos-duration="1000">
+            <h1>Certificações</h1>
+
+            <div class="cards">
+                <div class="card card1">
+                    <div class="image">
+                        <img src="assets/images/etec.png" alt="Etec logo">
+                    </div>
+
+                    <div class="text">
+                        <h2>Informática para <br> internet</h2>
+                        <p>Etec - Escola Técnica Estadual</p>
+                        <p>Finalização em 20/12/2021</p>
+                        <p>Carga horária de 3 anos</p>
+
+                        <a>Cursando</a>
+                    </div>
+                </div>
+
+                <div class="card card2">
+                    <div class="image">
+                        <img src="assets/images/udemy.png" alt="Udemy">
+                    </div>
+
+                    <div class="text">
+                        <h2>Desenvolvimento Web <br> Completo 2021</h2>
+                        <p>Udemy Brasil</p>
+                        <p>Emitido em 21 de Março de 2020</p>
+                        <p>Carga horária de 114,5 horas</p>
+
+                        <a href="https://www.udemy.com/certificate/UC-ce9ad33d-1fb0-4d1f-be7a-e986ee7a84c7/" target="_blank">Certificado</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Contato</h1>
             <div class="cards">
                 <div class="card">
@@ -155,7 +208,7 @@
                     </div>
                     <div class="text">
                         <h3>Whatsapp</h3>
-                        <p>(11) 94272-6193</p>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511942726193&text=Ol%C3%A1%20Thayran!">(11) 94272-6193</a>
                     </div>
                 </div>
                 
@@ -165,7 +218,7 @@
                     </div>
                     <div class="text">
                         <h3>Email</h3>
-                        <p>contato@thayrangabriel.com</p>
+                        <a target="_blank" href="mailto:contato@thayrangabriel.com">contato@thayrangabriel.com</a>
                     </div>
                 </div>
 
@@ -175,7 +228,7 @@
                     </div>
                     <div class="text">
                         <h3>Github</h3>
-                        <p>PrintThayranGabriel</p>
+                        <a target="_blank" href="https://github.com/PrintThayranGabriel">PrintThayranGabriel</a>
                     </div>
                 </div>
 
@@ -185,7 +238,7 @@
                     </div>
                     <div class="text">
                         <h3>Linkedin</h3>
-                        <p>Thayran Gabriel</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/thayran-gabriel-1870681b3/">Thayran Gabriel</a>
                     </div>
                 </div>
             </div>
@@ -195,6 +248,13 @@
     <footer>
         <p>Desenvolvido por <strong>Thayran Gabriel</strong></p>
     </footer>
+    
+    <script src="assets/vendor/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
