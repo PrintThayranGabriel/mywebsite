@@ -16,7 +16,7 @@
 @media only screen and (max-width: 950px) {
     .container .banner{
         flex-direction: column-reverse;
-    }  
+    }
 
     .about_me{
         display: flex;
@@ -71,12 +71,23 @@
         text-align: center;
     }
 
+    .container .banner .buttons{
+        text-align: center;
+        width: 200px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .container .banner .buttons a{
         text-align: center;
         width: 200px;
         display: flex;
         flex-wrap: wrap;
-        margin: 15px 0px;
+        margin: 5px 0px;
+    }
+
+    .container .banner .banner_text .buttons button:first-child{
+        width: 100%;
     }
 
     .container .banner .banner_text h1{
@@ -89,6 +100,15 @@
 
     .container .banner .banner_image img{
         width: 200px;
+    }
+
+    .container .about_me{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container .about_me lord-icon{
+        display: none;
     }
 
     .portfolio h1{
@@ -113,7 +133,7 @@
 
     .container .skills .cards .card{
         width: 100px;
-        height: 100px;
+        height: 110px;
     }
 
     .container .services .cards .card{
@@ -163,6 +183,10 @@
     .container .certifications .cards .card .text{
         align-items: center;
         text-align: center;
+    }
+
+    .darkmode{
+        margin: 20px;
     }
 
 }

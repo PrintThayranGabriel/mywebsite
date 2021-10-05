@@ -34,11 +34,12 @@ body{
 
 .menu_hamburguer{
     display: none;
-    background: rgba(0, 0, 0, 0.905);
+    background: rgba(0, 0, 0, 0.919);
     width: 100%;
     height: 100vh;
     position: fixed;
     animation: menu 1s;
+    z-index: 1000;
 }
 
 .menu_hamburguer .links{
@@ -58,6 +59,7 @@ body{
     padding: 5px 20px;
     margin: 10px 0px;
     border: 1px solid var(--color_gray);
+    color: #ddd;
 }
 
 .menu_hamburguer img{
@@ -86,11 +88,15 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 35px 50px;
-    column-gap: 470px;
+    column-gap: 390px;
 }
 
 header .logo h2{
     color: var(--color_white);
+}
+
+header .logo strong{
+    color: var(--color_green);
 }
 
 header .links{
@@ -145,13 +151,19 @@ header .links a:hover{
 
 .container .banner .banner_text .buttons{
     margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+    font-weight: 500;
 }
 
-.container .banner .banner_text .buttons a:first-child{
-    background: var(--color_green);
-    text-decoration: none;
+.container .banner .banner_text .buttons button:first-child{
+    border: none;
+    outline: none;
     color: var(--color_black);
+    background: var(--color_green);
+    box-shadow: 0px 0px 10px #00df5d6d;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .container .banner .banner_text .buttons a:last-child{
@@ -170,9 +182,15 @@ header .links a:hover{
 /* CONTAINER ABOUT ME*/
 
 .container .about_me{
-    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     width: 800px;
     margin-bottom: 70px;
+}
+
+.container .about_me lord-icon{
+    filter: drop-shadow(0px 0px 5px #00df5d4f);
 }
 
 .container .about_me .text h1{
@@ -235,7 +253,7 @@ header .links a:hover{
 }
 
 .container .portfolio .cards .card:hover{
-    box-shadow: 7px 8px 6px -6px var(--color_green);
+    box-shadow: 7px 8px 6px -6px #00df5d6d;
 }
 
 /* CONTAINER SERVICES*/
@@ -257,6 +275,9 @@ header .links a:hover{
 }
 
 .container .services .cards .card{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
     width: 320px;
     padding: 15px;
     background: var(--color_dark_gray);
@@ -271,6 +292,10 @@ header .links a:hover{
     color: var(--color_white);
     font-weight: 500;
     font-size: 25px;
+}
+
+.container .services .cards .card lord-icon{
+    filter: drop-shadow(0px 0px 10px #00df5de2);
 }
 
 /* CONTAINER SKILLS*/
@@ -308,6 +333,15 @@ header .links a:hover{
     font-size: calc(10px + .5vw);
 }
 
+.container .skills .card img{
+    filter: drop-shadow(0px 0px 10px #00df5d4b);
+    transition: .5s;
+}
+
+.container .skills .card img:hover{
+    transform: translateY(-5px);
+}
+
 /* CONTAINER CERTIFICATIONS */
 
 .container .certifications h1{
@@ -330,7 +364,7 @@ header .links a:hover{
     justify-content: center;
     align-items: center;
     column-gap: 20px;
-    border: 1px solid var(--color_dark_gray);
+    border: 1px solid #333333;
     margin: 10px 30px;
 }
 
@@ -345,9 +379,11 @@ header .links a:hover{
 
 .container .certifications .cards .card1 .image img{
     width: 120px;
+    filter: drop-shadow(0px 0px 10px #00df5d56);
 }
 
 .container .certifications .cards .card2 .image img{
+    filter: drop-shadow(0px 0px 10px #00df5d56);
     width: 100px;
 }
 
@@ -370,6 +406,7 @@ header .links a:hover{
 }
 .container .certifications .cards .card .text a{
     background: var(--color_green);
+    box-shadow: 0px 0px 10px #00df5d6d;
     text-decoration: none;
     color: var(--color_black);
     padding: 10px 20px;
@@ -416,10 +453,14 @@ header .links a:hover{
     font-size: 13px;
 }
 
-.container .contact .cards .card .image img{
+.container .contact .cards .card .image{
     background: var(--color_dark_gray);
     padding: 20px;
     border-radius: 10px;
+}
+
+.container .contact .cards .card .image img{
+    filter: drop-shadow(0px 0px 10px #00df5d70);
 }
 
 /* FOOTER */
@@ -436,4 +477,5 @@ footer p{
 
 footer strong{
     color: var(--color_green);
+    text-shadow: 0px 0px 10px #00df5d70;
 }

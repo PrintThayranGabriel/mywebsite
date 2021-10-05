@@ -11,7 +11,6 @@
     <title>Thayran Gabriel</title>
 </head>
 <body>
-    
     <div class="menu">
         <img id="open_menu" src="assets/images/open_menu.svg" alt="Menu">
     </div>
@@ -48,7 +47,7 @@
                 <p>Desenvolvedor Front-End & Back-end</p>
 
                 <div class="buttons">
-                    <a href="">Download CV</a>
+                    <button type="submit" onclick="window.open('assets/curriculo.pdf')">Download CV</button>
                     <a href="#contact">Entrar em contato</a>
                 </div>
             </div>
@@ -61,6 +60,15 @@
             <div class="text">
                 <h1>Sobre mim</h1>
                 <p>Olá, meu nome é Thayran Gabriel, tenho 17 anos,sou desenvolvedor web e atualmente estou cursando o ensino médio integrado a um curso técnico em desenvolvimento de sistemas web, sempre buscando o máximo de conhecimento possivel para que possa aprimorar meu trabalho. Fiz diversos cursos na área, tenho experiência com projetos freelancers e com empresas de pequeno e médio porte.</p>
+            </div>
+
+            <div class="image">
+                <lord-icon
+                    src="https://cdn.lordicon.com/nobciafz.json"
+                    trigger="hover"
+                    colors="primary:#00df5e,secondary:#dddddd"
+                    style="width:250px;height:250px">
+                </lord-icon>
             </div>
         </div>
 
@@ -112,17 +120,35 @@
             <h1>Serviços</h1>
             <div class="cards">
                 <div class="card">
-                    <img src="assets/images/code.png" alt="">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/dtgezzsi.json"
+                        trigger="hover"
+                        colors="primary:#00df5e,secondary:#dddddd"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+
                     <h1>Criação <br> de sites</h1>
                 </div>
 
                 <div class="card">
-                    <img src="assets/images/figma.png" alt="">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/jvucoldz.json"
+                        trigger="hover"
+                        colors="primary:#00df5e,secondary:#dddddd"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+
                     <h1>UI <br> Design</h1>
                 </div>
 
                 <div class="card">
-                    <img src="assets/images/smartphone.png" alt="">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/qhgmphtg.json"
+                        trigger="hover"
+                        colors="primary:#00df5e,secondary:#dddddd"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+
                     <h1>Sites <br> responsivos</h1>
                 </div>
             </div>
@@ -249,8 +275,9 @@
         <p>Desenvolvido por <strong>Thayran Gabriel</strong></p>
     </footer>
     
-    <script src="assets/vendor/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <script src="assets/vendor/menu.js"></script>
 
     <script>
         AOS.init();
